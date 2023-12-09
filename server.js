@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const axios = require("axios");
 const app = express();
@@ -16,7 +17,7 @@ app.get("/", (req, res) => {
 // Handle the /weather route
 app.get("/weather", async (req, res) => {
   const city = req.query.city;
-  const apiKey = "1ff094d63827ff93df12a445568bf143";
+  const apiKey = process.env.OPENWEATHER_API_KEY;
   const APIUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
   let weather;
