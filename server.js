@@ -3,10 +3,8 @@ const express = require("express");
 const axios = require("axios");
 const app = express();
 
-// Serve the public folder as static files
 app.use(express.static("public"));
 
-// Route for homepage (You can remove this if it's not needed for the Flutter app)
 app.get("/", (req, res) => {
   res.send("Weather API is up and running");
 });
