@@ -43,7 +43,7 @@ OPENWEATHER_API_KEY=[Your API Key Here]
 ```bash
 npm run server
 ```
-2. Open a web browser and navigate to `http://localhost:3000` to view the application.
+2. Open a web browser and navigate to `http://localhost:3000` or `http://192.168.x.x:3000` (in case you prefer to use the local IP address of your machine)  to view the application.
 
 ### Using the Application
 
