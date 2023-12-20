@@ -2,11 +2,16 @@ require('dotenv').config();
 const express = require("express");
 const axios = require("axios");
 const app = express();
+const path = require("path");
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static("public"));
 
+// Render index.ejs at the root route
 app.get("/", (req, res) => {
-  res.send("Weather API is up and running");
+  res.render("index", { weather: null, error: null });
 });
 
 // Handle the /weather route
