@@ -27,7 +27,7 @@ git clone https://github.com/Fernando9200/Weather-Flutter-App-Backend.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd [project-directory]
+cd Weather-Flutter-App-Backend
 ```
 3. Install the dependencies:
 ```bash
